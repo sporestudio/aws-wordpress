@@ -83,6 +83,10 @@ function download_wordpress() {
 
 
 function set_permissions() {
+    clear
+    echo -e "${yellowColour}[*]${endColour}${grayColour} Set properly permissions...${endColour}"
+    sleep 1
+    
     chown -R www-data:www-data /var/www/html/wordpress
     chmod -R 755 /var/www/html/wordpress
 }
